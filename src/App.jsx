@@ -13,6 +13,9 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import SettingsIcon from '@material-ui/icons/SettingsOutlined'
+import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 import EYlogo from './images/eylogo.svg'
  //____________________//
 
@@ -108,23 +111,37 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
    return (
      <div className={classes.root}>
        <CssBaseline />
-       <AppBar position="fixed" className={classes.appBar} style={{ background: '#FFFFFF' }}>
-       <Toolbar>
- 
- <img src={EYlogo} alt='eylogo' width='50' style={{ padding: '10px 0 10px 0', marginLeft: '20px' }}/>
-  
-   <div className={classes.grow} />
-   <div className={classes.sectionDesktop}>
-     <IconButton aria-label="show 4 new mails" style={{ color: '#000000'}}>
-       <Badge color="primary" variant="dot">
-         <NotificationsIcon />
-       </Badge>
-     </IconButton>
-     <IconButton aria-label="show 17 new notifications" style={{ color: '#000000'}}>
-         <SettingsIcon />
-     </IconButton>
-   </div>
-   {/* <div className={classes.sectionMobile}>
+       <AppBar
+         position="fixed"
+         className={classes.appBar}
+         style={{ background: "#FFFFFF" }}
+       >
+         <Toolbar>
+           <img
+             src={EYlogo}
+             alt="eylogo"
+             width="50"
+             style={{ padding: "10px 0 10px 0", marginLeft: "20px" }}
+           />
+
+           <div className={classes.grow} />
+           <div className={classes.sectionDesktop}>
+             <IconButton
+               aria-label="show 4 new mails"
+               style={{ color: "#000000" }}
+             >
+               <Badge color="primary" variant="dot">
+                 <NotificationsIcon />
+               </Badge>
+             </IconButton>
+             <IconButton
+               aria-label="show 17 new notifications"
+               style={{ color: "#000000" }}
+             >
+               <SettingsIcon />
+             </IconButton>
+           </div>
+           {/* <div className={classes.sectionMobile}>
      <IconButton
        aria-label="show more"
        aria-controls={mobileMenuId}
@@ -135,7 +152,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
        <MoreIcon />
      </IconButton>
    </div> */}
- </Toolbar>
+         </Toolbar>
        </AppBar>
        <Drawer
          className={classes.drawer}
@@ -146,10 +163,12 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
        >
          <Toolbar />
          <div className={classes.drawerContainer}>
-           <List style={{ overflow: 'hidden'}}>
-             {['', '', ''].map((text, index) => (
+           <List style={{ overflow: "hidden" }}>
+             {["", "", ""].map((text, index) => (
                <ListItem button key={text}>
-                 <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                 <ListItemIcon>
+                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                 </ListItemIcon>
                  <ListItemText primary={text} />
                </ListItem>
              ))}
@@ -157,12 +176,32 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
          </div>
        </Drawer>
 
-         <Toolbar />
-         <main className={classes.content}>
-        <div className={classes.toolbar} />
-        <Typography>holi</Typography>
-        <Cards />
-      </main>
+       <Toolbar />
+       <main className={classes.content}>
+         <div className={classes.toolbar} />
+         <Box component="span" m={1}>
+           <Button style={{ textTransform: "none", color: "#808080" }}>
+             Todos los proyectos
+           </Button>
+           <Button style={{ textTransform: "none" }}>
+             <Link
+               underline="always"
+               style={{
+                 textDecoration: "none",
+                 color: "#131313",
+                 borderBottom: "2px solid #FFE600",
+               }}
+             >
+               Proyecto principal
+             </Link>
+           </Button>
+           <Button style={{ textTransform: "none", color: "#808080" }}>
+             Configurar proyectos
+           </Button>
+         </Box>
+
+         <Cards />
+       </main>
        <MiniSidebar />
      </div>
    );

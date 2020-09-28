@@ -6,17 +6,16 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 
+import CheckIcon from '@material-ui/icons/CheckBoxOutlined';
+import BuildIcon from '@material-ui/icons/Build';
+import CommentIcon from '@material-ui/icons/ModeCommentOutlined';
+
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
   title: {
-    fontSize: 14,
+    fontSize: 9,
   },
   pos: {
     marginBottom: 12,
@@ -40,8 +39,8 @@ const Columnas = (props) => {
             hai
         <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
+        <Typography className={classes.title} color="textSecondary" align='right' style={{fontWeight:'bold'}}>
+          ...
         </Typography>
         <Typography variant="h5" component="h2">
           haiyaabndjan
@@ -54,6 +53,9 @@ const Columnas = (props) => {
           <br />
           {'"a benevolent smile"'}
         </Typography>
+        <CheckIcon fontSize="small" style={{color:'#cccccc'}} />
+        <BuildIcon fontSize="small" style={{color:'#cccccc'}}/>
+        <CommentIcon fontSize="small" style={{color:'#cccccc'}}/>
       </CardContent>
       <CardActions>
         <Button size="small">Learn More</Button>
@@ -64,8 +66,8 @@ const Columnas = (props) => {
             uhuh
         <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
+      <Typography className={classes.title} color="textSecondary" align='right' style={{fontWeight:'bold'}}>
+          ...
         </Typography>
         <Typography variant="h5" component="h2">
           haiyaabndjan
@@ -88,8 +90,8 @@ const Columnas = (props) => {
             ajnkdkjan
         <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
+      <Typography className={classes.title} color="textSecondary" align='right' style={{fontWeight:'bold'}}>
+          ...
         </Typography>
         <Typography variant="h5" component="h2">
           haiyaabndjan

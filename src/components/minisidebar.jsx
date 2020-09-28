@@ -15,6 +15,7 @@ import MailIcon from '@material-ui/icons/Mail';
 
 
 import Conexion from './conexion'
+import Chat from './chat'
 
 const drawerWidth = 240;
 
@@ -57,9 +58,11 @@ export default function PermanentDrawerRight() {
         anchor="right"
       >
         <div className={classes.toolbar} />
-        
-        <Conexion></Conexion>
+        <Typography align='right' variant='h6'>Gestión </Typography>
+        <Conexion/>
 
+        
+        {/* <Chat /> */}
         
       </Drawer>
  
