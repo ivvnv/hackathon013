@@ -115,13 +115,13 @@ export default function ClippedDrawer() {
 
      <IconButton aria-label="show 4 new mails" style={{ color: '#000000'}} style={{ padding: '10px 0 10px 0', marginLeft: '600px' }}>
      
-      <img src={On} alt='eylogo' width='35' style={{ padding: '10px 0 10px 0', marginLeft: '10px' }}/>
+      <img src={On} alt='eylogo' width='25' style={{ padding: '10px 0 10px 0', marginLeft: '10px' }}/>
      </IconButton>
      <IconButton aria-label="show 17 new notifications" style={{ color: '#000000'}}>
-     <img src={GON} alt='eylogo' width='35' style={{ padding: '10px 0 10px 0', marginLeft: '10px' }}/>
+     <img src={GON} alt='eylogo' width='25' style={{ padding: '10px 0 10px 0', marginLeft: '10px' }}/>
      </IconButton>
      <IconButton aria-label="show 17 new notifications" style={{ color: '#000000'}}>
-     <img src={Logout} alt='eylogo' width='35' style={{ padding: '10px 0 10px 0', marginLeft: '10px' }}/>
+     <img src={Logout} alt='eylogo' width='25' style={{ padding: '10px 0 10px 0', marginLeft: '10px' }}/>
      </IconButton>
               </div>
           </Toolbar>
