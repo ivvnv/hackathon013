@@ -23,7 +23,7 @@ en la Hackathon de la Generación SCL013 de Laboratoria.
 > incentivar a los equipos a usarla.
 
 
-Como solución construimos una plataforma llamada **FocusTime**, la cual es una herramienta para que colaboradores puedan **planificarse, interactuar entre sí y recibir puntos y recompensas por tareas realizadas**, y el líder pueda **obtener métricas de productividad y bienestar del equipo y asignarles las actividades** que les correspondan.
+Como solución construimos una plataforma llamada **FocusTime**, la cual es una herramienta para que colaboradores puedan **planificarse, interactuar entre sí y recibir puntos y recompensas por tareas realizadas**, y para que el líder pueda **obtener métricas de productividad y bienestar del equipo y asignarles las actividades** que les correspondan.
 
 
 ## Prototipo
