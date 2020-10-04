@@ -14,7 +14,6 @@ import "firebase/auth";
 import { useFirebaseApp, useUser } from "reactfire";
 import { useHistory} from 'react-router-dom'
 import Planificacion from './Planificacion'
-import logo from '../imagenes/logo.png'
 
 
 function Copyright() {

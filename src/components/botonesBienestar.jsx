@@ -10,19 +10,19 @@ const BotonesBienestar = () => {
 
   <div className="BotonesBienestar">
       <div className="BotonesBienestarChild1">
-        <a href=""> <img alt="" src={Rectangle} /> Estrés </a>
+        <a href="/bienestar" target="_blank" rel="noopener noreferrer"> <img alt="" src={Rectangle} /> Estrés </a>
       </div>
       <div className="BotonesBienestarChild2">
-        <a href=""> <img alt="" src={Rectangle} /> Ansiedad  </a>
+        <a href="/bienestar" target="_blank" rel="noopener noreferrer"> <img alt="" src={Rectangle} /> Ansiedad  </a>
       </div>
       <div className="BotonesBienestarChild3">
-        <a href=""><img alt="" src={Rectangle} /> Motivación</a>
+        <a href="/bienestar" target="_blank" rel="noopener noreferrer"><img alt="" src={Rectangle} /> Motivación</a>
       </div>
       <div className="BotonesBienestarChild4">
-        <a href=""><img alt="" src={Rectangle} /> Confianza</a>
+        <a href="/bienestar" target="_blank" rel="noopener noreferrer"><img alt="" src={Rectangle} /> Confianza</a>
       </div>      
       <div className="BotonesBienestarChild5">
-        <a href=""><img alt="" src={Rectangle} /> Enfoque</a>
+        <a href="/bienestar" target="_blank" rel="noopener noreferrer"><img alt="" src={Rectangle} /> Enfoque</a>
       </div>      
 
     </div>

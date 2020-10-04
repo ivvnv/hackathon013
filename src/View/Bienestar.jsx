@@ -1,14 +1,10 @@
 import React from 'react';
-import { useFirebaseApp, useUser } from "reactfire";
-import { useHistory} from 'react-router-dom';
+import { useUser } from "reactfire";
 import Login from './Login';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Badge from '@material-ui/core/Badge';
-import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
-import SettingsIcon from '@material-ui/icons/SettingsOutlined'
 import EYlogo from '../imagenes/eylogo.svg'
 import MiniSidebar from '../components/minisidebar'
 import Grid from '../components/gridBienestar'
@@ -90,13 +86,6 @@ const useStyles = makeStyles((theme) => ({
 export default function ClippedDrawer() {
   const classes = useStyles();
   const user = useUser();
-  const history = useHistory();
-  const firebase = useFirebaseApp();
-
-  const logout = async ()=>{
-    await firebase.auth().signOut();
-    history.push('/');
-  }
  
   return (
     <div>
@@ -113,7 +102,7 @@ export default function ClippedDrawer() {
    {user.displayName}</Typography></div>
    <div className={classes.sectionDesktop}>
 
-     <IconButton aria-label="show 4 new mails" style={{ color: '#000000'}} style={{ padding: '10px 0 10px 0', marginLeft: '600px' }}>
+     <IconButton aria-label="show 4 new mails" style={{ color: '#000000', padding: '10px 0 10px 0', marginLeft: '600px' }}>
      
       <img src={On} alt='eylogo' width='25' style={{ padding: '10px 0 10px 0', marginLeft: '10px' }}/>
      </IconButton>
